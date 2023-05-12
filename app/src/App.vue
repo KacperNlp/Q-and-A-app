@@ -1,7 +1,4 @@
 <template>
-  <div>
-    <NavigationLayout></NavigationLayout>
-  </div>
   <router-view></router-view>
 </template>
 
