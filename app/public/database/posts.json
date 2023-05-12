@@ -1,0 +1,16 @@
+{
+    "posts": [
+        {
+            "title": "Example 1",
+            "description": "Example description",
+            "key": 12,
+            "id": 1
+        },
+        {
+            "title": "Example 2",
+            "description": "Example description",
+            "key": 22,
+            "id": 2
+        }
+    ]
+}
