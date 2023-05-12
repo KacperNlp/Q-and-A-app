@@ -9,4 +9,8 @@ export default [
     name: "about",
     component: () => import("../view/AboutView.vue"),
   },
+  {
+    path: "/post/:id",
+    component: () => import("../view/QuestionView.vue"),
+  },
 ];
