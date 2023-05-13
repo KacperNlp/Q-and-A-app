@@ -4,11 +4,15 @@
     <slot name="content"></slot>
   </main>
 </template>
+
 <script>
-export default {
+import { defineComponent } from "vue";
+
+export default defineComponent({
   name: "DashboardLayout",
-};
+});
 </script>
+
 <style lang="scss">
 .dashboard {
   display: grid;

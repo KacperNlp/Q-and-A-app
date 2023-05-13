@@ -6,11 +6,15 @@
     </nav>
   </header>
 </template>
+
 <script>
-export default {
+import { defineComponent } from "vue";
+
+export default defineComponent({
   name: "NavigationLayout",
-};
+});
 </script>
+
 <style lang="scss">
 .nav {
   display: flex;

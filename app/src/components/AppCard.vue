@@ -3,11 +3,15 @@
     <slot></slot>
   </div>
 </template>
+
 <script>
-export default {
+import { defineComponent } from "vue";
+
+export default defineComponent({
   name: "AppCard",
-};
+});
 </script>
+
 <style lang="scss" scoped>
 .card {
   padding: 20px 10px;

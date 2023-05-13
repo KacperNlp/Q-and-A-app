@@ -14,16 +14,9 @@
   </DashboardLayout>
 </template>
 <script setup>
-import { onBeforeMount } from "vue";
 import { usePostsStore } from "@/store/postsStore";
-import getPosts from "@/services/getPosts";
 
 const store = usePostsStore();
-
-onBeforeMount(async () => {
-  const posts = await getPosts();
-  store.setPosts(posts);
-});
 </script>
 <style lang="scss">
 .post-card {
