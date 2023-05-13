@@ -1,7 +1,7 @@
 <template>
   <DashboardLayout>
     <template v-slot:content>
-      <AppCard v-for="post in posts" :key="post.key">
+      <AppCard v-for="post in store.getAllPosts" :key="post.key">
         <div class="post-card">
           <h3 class="post-card-headlie">{{ post.title }}</h3>
           <p class="post-card-description">{{ post.description }}</p>
@@ -13,21 +13,17 @@
     </template>
   </DashboardLayout>
 </template>
-<script>
+<script setup>
+import { onBeforeMount } from "vue";
+import { usePostsStore } from "@/store/postsStore";
 import getPosts from "@/services/getPosts";
 
-export default {
-  name: "HomeView",
-  data() {
-    return {
-      posts: [],
-    };
-  },
+const store = usePostsStore();
 
-  async beforeMount() {
-    this.posts = await getPosts();
-  },
-};
+onBeforeMount(async () => {
+  const posts = await getPosts();
+  store.setPosts(posts);
+});
 </script>
 <style lang="scss">
 .post-card {
