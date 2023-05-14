@@ -12,6 +12,7 @@ import NavigationLayout from "./layouts/NavigationLayout.vue";
 //components
 import AppCard from "./components/AppCard.vue";
 import AppLinkBtn from "./components/AppLinkBtn.vue";
+import AppUserBlock from "./components/AppUserBlock.vue";
 
 const pinia = createPinia();
 const app = createApp(App);
@@ -28,6 +29,7 @@ app.component("NavigationLayout", NavigationLayout);
 //compoents
 app.component("AppCard", AppCard);
 app.component("AppLinkBtn", AppLinkBtn);
+app.component("AppUserBlock", AppUserBlock);
 
 app.use(router);
 app.use(pinia);
