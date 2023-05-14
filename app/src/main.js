@@ -10,6 +10,7 @@ import DashboardLayout from "./layouts/DashboardLayout.vue";
 import NavigationLayout from "./layouts/NavigationLayout.vue";
 
 //components
+import AppBackToHomeLink from "./components/AppBackToHomeLink.vue";
 import AppCard from "./components/AppCard.vue";
 import AppLinkBtn from "./components/AppLinkBtn.vue";
 import AppUserBlock from "./components/AppUserBlock.vue";
@@ -27,6 +28,7 @@ app.component("DashboardLayout", DashboardLayout);
 app.component("NavigationLayout", NavigationLayout);
 
 //compoents
+app.component("AppBackToHomeLink", AppBackToHomeLink);
 app.component("AppCard", AppCard);
 app.component("AppLinkBtn", AppLinkBtn);
 app.component("AppUserBlock", AppUserBlock);
