@@ -5,9 +5,10 @@
         <div class="post-card">
           <h3 class="post-card-headlie">{{ post.title }}</h3>
           <p class="post-card-description">{{ post.description }}</p>
-          <router-link :to="`/post/${post.id}`" class="post-card-link"
-            >Check Question</router-link
-          >
+          <app-link-btn
+            text="Read more"
+            :link="`/post/${post.id}`"
+          ></app-link-btn>
         </div>
       </AppCard>
     </template>
@@ -26,10 +27,6 @@ const store = usePostsStore();
 
   &-description {
     margin-bottom: 10px;
-  }
-
-  &-link {
-    color: #fff;
   }
 }
 </style>
