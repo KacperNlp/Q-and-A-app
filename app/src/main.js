@@ -8,6 +8,7 @@ import routes from "./router/routes";
 //Layoutes
 import DashboardLayout from "./layouts/DashboardLayout.vue";
 import NavigationLayout from "./layouts/NavigationLayout.vue";
+import QuestionPageLayout from "./layouts/QuestionPageLayout.vue";
 
 //components
 import AppBackToHomeLink from "./components/AppBackToHomeLink.vue";
@@ -26,6 +27,7 @@ const router = VueRouter.createRouter({
 //layouts
 app.component("DashboardLayout", DashboardLayout);
 app.component("NavigationLayout", NavigationLayout);
+app.component("QuestionPageLayout", QuestionPageLayout);
 
 //compoents
 app.component("AppBackToHomeLink", AppBackToHomeLink);
