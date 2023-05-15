@@ -4,7 +4,7 @@
       <template #question-container><h1>Question</h1></template>
       <template #answers-container>
         <h2>Answer</h2>
-      </div></template>
+      </template>
     </question-page-layout>
   </div>
 </template>

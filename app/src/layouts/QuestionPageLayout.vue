@@ -1,11 +1,18 @@
 <template>
   <div class="question-page">
     <NavigationLayout></NavigationLayout>
-    <div class="question-container">
-      <slot name="question-container"></slot>
-    </div>
-    <div class="answers-container">
-      <slot name="answers-container"></slot>
+    <div class="question-page-content">
+      <main class="question-page-main">
+        <section class="question-container">
+          <slot name="question-container"></slot>
+        </section>
+        <section class="answers-container">
+          <slot name="answers-container"></slot>
+        </section>
+      </main>
+      <sidebar class="question-page-sidebar">
+        <h1>sidebar section</h1>
+      </sidebar>
     </div>
   </div>
 </template>
@@ -18,4 +25,44 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.question {
+  &-page {
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      width: 90%;
+      max-width: 1150px;
+      margin: 100px auto;
+
+      @media (min-width: 768px) {
+        flex-direction: row;
+        gap: 50px;
+      }
+
+      @media (min-width: 1280px) {
+        gap: 100px;
+      }
+    }
+
+    &-main {
+      flex-grow: 1;
+    }
+
+    &-sidebar {
+      width: 100%;
+      background: red;
+
+      @media (min-width: 768px) {
+        width: 250px;
+      }
+    }
+  }
+
+  &-container {
+    max-width: 950px;
+    background: orange;
+  }
+}
+</style>
