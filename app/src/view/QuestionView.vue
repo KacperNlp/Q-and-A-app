@@ -2,7 +2,7 @@
   <div v-if="isPostLoaded">
     <question-page-layout>
       <template #question-container><h1>Question</h1></template>
-      <template <div id="answers-container">
+      <template #answers-container>
         <h2>Answer</h2>
       </div></template>
     </question-page-layout>
