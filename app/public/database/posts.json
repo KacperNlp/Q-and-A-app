@@ -3,24 +3,28 @@
         {
             "title": "Example 1",
             "description": "Example description",
+            "category": "javascript",
             "key": 12,
             "id": 1
         },
         {
             "title": "Example 2",
             "description": "Example description",
+            "category": "javascript",
             "key": 22,
             "id": 2
         },
         {
             "title": "Example 3",
             "description": "Example description",
+            "category": "php",
             "key": 33,
             "id": 4
         },
         {
             "title": "Example 2",
             "description": "Example description",
+            "category": "php",
             "key": 44,
             "id": 5
         }

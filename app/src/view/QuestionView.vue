@@ -1,7 +1,13 @@
 <template>
   <div v-if="isPostLoaded">
     <question-page-layout>
-      <template #question-container><h1>Question</h1></template>
+      <template #question-container>
+        <app-question-block
+          :title="title"
+          :content="content"
+          :category="category"
+        ></app-question-block>
+      </template>
       <template #answers-container>
         <h2>Answer</h2>
       </template>
@@ -24,13 +30,17 @@ export default defineComponent({
     const route = useRoute();
     const store = usePostsStore();
 
+    //computed
     const isPostLoaded = computed(() => post.value.title !== undefined);
+    const title = computed(() => post.value.title);
+    const content = computed(() => post.value.description);
+    const category = computed(() => post.value.category);
 
     onBeforeMount(() => {
       post.value = store.getVisitedPost(route.params.id);
     });
 
-    return { post, isPostLoaded };
+    return { post, isPostLoaded, title, content, category };
   },
 });
 </script>

@@ -3,12 +3,12 @@
     <NavigationLayout></NavigationLayout>
     <div class="question-page-content">
       <main class="question-page-main">
-        <section class="question-container">
+        <app-card :toLeft="true" :isBrighterBg="true">
           <slot name="question-container"></slot>
-        </section>
-        <section class="answers-container">
+        </app-card>
+        <app-card class="answers-container">
           <slot name="answers-container"></slot>
-        </section>
+        </app-card>
       </main>
       <sidebar class="question-page-sidebar">
         <h1>sidebar section</h1>
@@ -48,6 +48,9 @@ export default defineComponent({
 
     &-main {
       flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
     }
 
     &-sidebar {
@@ -58,11 +61,6 @@ export default defineComponent({
         width: 250px;
       }
     }
-  }
-
-  &-container {
-    max-width: 950px;
-    background: orange;
   }
 }
 </style>

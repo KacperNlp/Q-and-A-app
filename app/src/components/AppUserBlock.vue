@@ -4,6 +4,7 @@
     <p class="user-block-nick">{{ nick }}</p>
   </router-link>
 </template>
+
 <script>
 import { defineComponent } from "vue";
 
@@ -26,4 +27,19 @@ export default defineComponent({
   },
 });
 </script>
-<style lang=""></style>
+
+<style lang="scss">
+.user-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100px;
+  height: 100px;
+
+  &-nick {
+    font-size: 14px;
+    color: #fff;
+  }
+}
+</style>

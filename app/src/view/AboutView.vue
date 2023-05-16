@@ -11,4 +11,5 @@ export default {
   name: "AboutView",
 };
 </script>
+
 <style lang="scss"></style>
