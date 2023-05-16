@@ -2,7 +2,8 @@
   <div class="app-question-block">
     <div class="app-question-block-content">
       <p class="app-question-block-content-category">
-        Category: {{ category }}
+        Category:
+        <app-category-box :categoryName="category"></app-category-box>
       </p>
       <h1 class="app-question-block-content-headline">{{ title }}</h1>
       <p class="app-question-block-content-main">{{ content }}</p>

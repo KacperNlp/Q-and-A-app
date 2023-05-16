@@ -13,6 +13,7 @@ import QuestionPageLayout from "./layouts/QuestionPageLayout.vue";
 //components
 import AppBackToHomeLink from "./components/AppBackToHomeLink.vue";
 import AppCard from "./components/AppCard.vue";
+import AppCategoryBox from "./components/AppCategoryBox.vue";
 import AppLinkBtn from "./components/AppLinkBtn.vue";
 import AppQuestionBlock from "./components/AppQuestionBlock.vue";
 import AppUserBlock from "./components/AppUserBlock.vue";
@@ -33,6 +34,7 @@ app.component("QuestionPageLayout", QuestionPageLayout);
 //compoents
 app.component("AppBackToHomeLink", AppBackToHomeLink);
 app.component("AppCard", AppCard);
+app.component("AppCategoryBox", AppCategoryBox);
 app.component("AppLinkBtn", AppLinkBtn);
 app.component("AppQuestionBlock", AppQuestionBlock);
 app.component("AppUserBlock", AppUserBlock);
