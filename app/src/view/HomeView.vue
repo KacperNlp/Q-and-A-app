@@ -5,7 +5,9 @@
         <div class="post-card">
           <p class="post-card-category">
             Category:
-            <span class="post-card-category-box">{{ post.category }}</span>
+            <span class="post-card-category-box" :class="[post.category]">{{
+              post.category
+            }}</span>
           </p>
           <h3 class="post-card-headlie">{{ post.title }}</h3>
           <p class="post-card-description">{{ post.description }}</p>
@@ -33,7 +35,16 @@ const store = usePostsStore();
       display: inline-block;
       margin-left: 5px;
       padding: 5px 10px;
-      border: 1px solid #fff;
+      border: 1px solid #000;
+      color: #000;
+
+      &.javascript {
+        background: yellow;
+      }
+
+      &.php {
+        background: rgb(209, 129, 209);
+      }
     }
   }
 
@@ -43,6 +54,8 @@ const store = usePostsStore();
 
   &-description {
     margin-bottom: 36px;
+    font-size: 14px;
+    line-height: 130%;
   }
 }
 </style>

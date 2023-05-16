@@ -61,7 +61,9 @@ export default defineComponent({
     }
 
     &-main {
-      margin-bottom: 30px;
+      margin-bottom: 36px;
+      font-size: 14px;
+      line-height: 140%;
     }
   }
 }
