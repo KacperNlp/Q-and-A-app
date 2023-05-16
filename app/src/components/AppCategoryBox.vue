@@ -22,15 +22,16 @@ export default defineComponent({
   display: inline-block;
   margin-left: 5px;
   padding: 5px 10px;
-  border: 1px solid #000;
-  color: #000;
+  border: 1px solid #fff;
+  font-weight: 600;
+  font-style: italic;
 
   &.javascript {
-    background: yellow;
+    color: yellow;
   }
 
   &.php {
-    background: rgb(209, 129, 209);
+    color: rgb(209, 129, 209);
   }
 }
 </style>
